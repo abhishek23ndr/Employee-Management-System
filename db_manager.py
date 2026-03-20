@@ -5,7 +5,7 @@ import os
 class DatabaseManager:
     def __init__(self):
         # Connect to local MongoDB instance
-        atlas_uri = "mongodb+srv://adminAbhishek:abhishek_GUI@cluster0.fincze7.mongodb.net/?appName=Cluster0"
+        atlas_uri = "mongodb+srv://your_username:<PASSWORD>@cluster0.mongodb.net/?retryWrites=true&w=majority"
         self.client = pymongo.MongoClient(atlas_uri)
         # Create/Connect to database 'company_db'
         self.db = self.client["company_db"]
